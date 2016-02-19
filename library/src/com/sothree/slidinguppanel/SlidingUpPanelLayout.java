@@ -448,11 +448,12 @@ public class SlidingUpPanelLayout extends ViewGroup {
             requestLayout();
         }
 
-        if (getPanelState() == PanelState.COLLAPSED) {
-            smoothToBottom();
-            invalidate();
-            return;
-        }
+//      Coccoc, resize panel height after collapse
+//        if (getPanelState() == PanelState.COLLAPSED) {
+//            smoothToBottom();
+//            invalidate();
+//            return;
+//        }
     }
 
     protected void smoothToBottom() {
